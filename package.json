@@ -1,25 +1,21 @@
 {
   "name": "language-dasm",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Basic syntax highlighting for the DASM assembly language for the fictionnal DCPU-16.",
-  "engines": {
-    "atom": "*",
-    "node": "*"
-  },
-  "keywords": [
-      "DASM",
-      "assembly",
-      "dcpu",
-      "dcpu16",
-      "grammar",
-      "syntax"
-  ],
-  "repository": "https://github.com/azertyfun/language-dasm",
-  "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "keywords": [
+    "DASM",
+    "assembly",
+    "dcpu",
+    "dcpu16",
+    "grammar",
+    "syntax"
+  ],
+  "repository": "https://github.com/azertyfun/language-dasm",
+  "license": "MIT",
   "stylesheets": [
-      "dasm.css"
+    "dasm.css"
   ]
 }
