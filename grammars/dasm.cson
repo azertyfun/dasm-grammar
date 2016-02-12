@@ -1,0 +1,51 @@
+'scopeName': 'source.dasm'
+'name': 'DASM'
+'fileTypes': [
+    'dasm'
+]
+'patterns': [
+    {
+        'match': ';.*'
+        'name': 'comment.line'
+    },
+    {
+        'match': '\\b(?i:(0x\\h*))'
+        'name': 'constant.numeric.integer.hexadecimal'
+    },
+    {
+        'match': '\\b(?i:(0o?[0-7]+))'
+        'name': 'constant.numeric.integer.octal'
+    },
+    {
+        'match': '\\b(?i:(0b[01]+))',
+        'name': 'constant.numeric.integer.binary'
+    },
+    {
+        'match': '\\b([1-9]+[0-9]*|0)'
+        'name': 'constant.numeric.integer.decimal'
+    },
+    {
+        'match': '\\+'
+        'name': 'keyword.operator.arithmetic'
+    },
+    {
+        'match': ':([A-Za-z0-9_]+)'
+        'name': 'entity.name.function'
+    },
+    {
+        'match': '".*"'
+        'name': 'string'
+    },
+    {
+        'match': '(SET|ADD|SUB|MUL|MLI|DIV|DVI|MOD|MDI|AND|BOR|XOR|SHR|ASR|SHL|IFB|IFC|IFE|IFN|IFG|IFA|IFL|IFU|ADX|SBX|STI|STD|set|add|sub|mul|mli|div|dvi|mod|mdi|and|bor|xor|shr|asr|shl|ifb|ifc|ife|ifn|ifg|ifa|ifl|ifu|adx|sbx|sti|std) '
+        'name': 'instruction.keyword.basic'
+    },
+    {
+        'match': '(JSR|INT|IAG|IAS|RFI|IAQ|HWN|HWQ|HWI|jsr|int|iag|ias|rfi|iaq|hwn|hwq|hwi) '
+        'name': 'instruction.keyword.special'
+    },
+    {
+        'match': '\\b(A|B|C|X|Y|Z|I|J|PC|SP|EX|PUSH|POP|PEEK|PICK|a|b|c|x|y|z|i|j|pc|sp|ex|push|pop|peek|pick)\\b'
+        'name': 'storage.register'
+    }
+]
