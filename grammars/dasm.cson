@@ -41,11 +41,15 @@
         'name': 'instruction.keyword.basic'
     },
     {
-        'match': '(JSR|INT|IAG|IAS|RFI|IAQ|HWN|HWQ|HWI|jsr|int|iag|ias|rfi|iaq|hwn|hwq|hwi) '
+        'match': '(JSR|INT|IAG|IAS|RFI|IAQ|HWN|HWQ|HWI|BRK|LOG|jsr|int|iag|ias|rfi|iaq|hwn|hwq|hwi|brk|log) '
         'name': 'instruction.keyword.special'
     },
     {
-        'match': '\\b(A|B|C|X|Y|Z|I|J|PC|SP|EX|PUSH|POP|PEEK|PICK|a|b|c|x|y|z|i|j|pc|sp|ex|push|pop|peek|pick)\\b'
+        'match': '\\b(A|B|C|X|Y|Z|I|J|a|b|c|x|y|z|i|j)\\b'
         'name': 'storage.register'
+    }
+    {
+        'match': '\\b(PUSH|POP|PEEK|PICK|push|pop|peek|pick|PC|SP|EX|pc|sp|ex)\\b'
+        'name': 'storage.register.special'
     }
 ]

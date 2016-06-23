@@ -14,8 +14,5 @@
     "syntax"
   ],
   "repository": "https://github.com/azertyfun/language-dasm",
-  "license": "MIT",
-  "stylesheets": [
-    "dasm.css"
-  ]
+  "license": "MIT"
 }
