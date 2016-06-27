@@ -29,10 +29,6 @@
         'name': 'keyword.operator.arithmetic'
     },
     {
-        'match': ':([A-Za-z0-9_]+)'
-        'name': 'entity.name.function'
-    },
-    {
         'match': '".*"'
         'name': 'string'
     },
@@ -47,9 +43,21 @@
     {
         'match': '\\b(A|B|C|X|Y|Z|I|J|a|b|c|x|y|z|i|j)\\b'
         'name': 'storage.register'
-    }
+    },
     {
         'match': '\\b(PUSH|POP|PEEK|PICK|push|pop|peek|pick|PC|SP|EX|pc|sp|ex)\\b'
         'name': 'storage.register.special'
+    },
+    {
+        'match': '(\\.define|\\.DEFINE|\\#define|\\#DEFINE|\\.include|\\.INCLUDE|\\#include|\\#INCLUDE|\\.magic|\\.MAGIC|\\#magic|\\#MAGIC|\\.org|\\.ORG|\\#org|\\#ORG) (.*)'
+        'name': 'meta.preprocessor'
+    },
+    {
+        'match': '\\.([A-Za-z0-9_]+)'
+        'name': 'entity.name.function'
+    },
+    {
+        'match': ':([A-Za-z0-9_]+)'
+        'name': 'entity.name.function'
     }
 ]
