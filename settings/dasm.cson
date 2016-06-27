@@ -1,5 +1,5 @@
 '.source.dasm':
   'editor':
     'commentStart': '; '
-    'increaseIndentPattern': '^\\s*(ifb|IFB|ifc|IFC|ife|IFE|ifn|IFN|ifg|IFG|ifl|IFL|ifu|IFU).*$'
-    'decreaseIndentPattern': ''
+    'increaseIndentPattern': '^\\s*(\\.).*$'
+    'decreaseNextIndentPattern': '^\\s*(\\.include|\\.INCLUDE|\\.define|\\.DEFINE|\\.magic|\\.MAGIC|\\.org|\\.ORG|\\.dat|\\.DAT).*$'
